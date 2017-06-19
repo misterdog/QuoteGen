@@ -1,0 +1,63 @@
+
+<!--html>
+	<head>
+		{% if title %}
+		<title>{{ title }} - microblog</title>
+		{% else %}
+		<title>Starving Artist Movers</title>
+		{% endif %}
+		
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+
+	</head>
+
+	<body>
+
+
+		<div class="jumbotron jumbotron-fluid">
+			<div class="container">
+				<h1 class="display-3">Starving Artist Movers</h1>
+				<p class="lead">Your moving and delivery experts</p>
+			</div>
+		</div>
+
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	</body>
+</html-->
+
+
+<!DOCTYPEhtml>
+
+{% extends "base.html" %}
+{% block content %}
+	<div class="container">
+		<h1>Generate Quote</h1>
+		<p>Fill out the form below and get a free quote instantly!</p>
+	</div>
+
+	<div class="col">
+		<div class="col-sm-4">
+			<a href="fullmove"><button type="button" class="btn-default btn-lrg center-block">Full Move</button></a>
+		</div>
+		<div class="col-sm-4">
+			<button type="button" class="btn-default btn-lrg center-block">Labor Only</button>
+		</div>
+		<div class="col-sm-4">
+			<button type="button" class="btn-default btn-lrg center-block">Delivery</button>
+		</div>
+	</div>
+	<!--div class="container">
+		<form action='fullmove' method='POST'>
+			<div class="col-sm-4"><input class="btn-default btn-lrg center-block" type="submit" name="fullmove" value="Full Move"></div>
+			<div class="col-sm-4"><input class="btn-default btn-lrg center-block" type="submit" name="labor" value="Labor Only"><</div>
+		</form>
+	</div-->
+	<!--div class="container">
+		<img src="static/furniture/dresser.jpg" class="img-responsive" alt="dresser" width="304" height="236">
+		<img src="static/furniture/couch.jpg" class="img-responsive" alt="couch" width="304" height="236">
+	</div-->
+{% endblock %}
